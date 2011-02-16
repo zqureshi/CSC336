@@ -1,0 +1,4 @@
+% MATLAB script for evaluation cos 2*m*pi
+format long
+
+fprintf('k\tm\t

@@ -1,0 +1,23 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.4)  4 FEB 2011 06:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**{{\def\dash{\raise2.1pt\hbox{\rule{5pt}{0.3pt}}\hspace{1pt}}\begin{tabbing}
+
+! Emergency stop.
+<to be read again> 
+                   \def 
+<*> {{\def
+          \dash{\raise2.1pt\hbox{\rule{5pt}{0.3pt}}\hspace{1pt}}\begin{tabbing}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 11 strings out of 494588
+ 296 string characters out of 1172688
+ 45887 words of memory out of 3000000
+ 3312 multiletter control sequences out of 15000+50000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 334 hyphenation exceptions out of 8191
+ 1i,0n,0p,214b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

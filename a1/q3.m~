@@ -1,0 +1,13 @@
+% MATLAB script to approximate e
+format long;
+
+% Output header
+display(sprintf('k\tn\tapproximation\terror'));
+display(sprintf('--\t--\t-------------\t------'));
+
+for k = 1:20
+    n = 10^k;
+    e = (1 + 1/n)^n;
+    
+    sprintf('%d\t%e\t%e\t%e', k, n, e, exp(1)-e);
+end
