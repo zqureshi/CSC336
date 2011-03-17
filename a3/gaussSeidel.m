@@ -1,7 +1,7 @@
-function [xCurr, k] = jacobi(A, b, ABSTOL)
-%JACOBI Computes Approximate solution to Ax = b using the Jacobi
-%   method and returns the number of iterations before the
-%   absolute tolerance is reached
+function [xCurr, k] = gaussSeidel(A, b, ABSTOL);
+%GAUSSSEIDEL Computes Approximate solution to Ax = b using the 
+%   Gauss-Seidel method and returns the number of iterations
+%   before the absolute tolerance is reached
 n = length(A);
 xPrev = zeros(n, 1);
 xCurr = ones(n, 1);
@@ -12,10 +12,11 @@ while tolerance > ABSTOL
   k = k + 1;
   for i = 1:n
     sum = 0;
-    for j = 1:n
-      if j ~= i
+    for j = 1:i-1
+        sum = sum + A(i,j) * xCurr(j);
+    end
+    for j = i+1:n
         sum = sum + A(i,j) * xPrev(j);
-      end
     end
     xCurr(i) = (b(i) - sum) / A(i,i);
   end
