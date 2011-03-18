@@ -7,7 +7,7 @@ xPrev = zeros(n, 1);
 xCurr = ones(n, 1);
 
 k = 0;
-tolerance = norm(xCurr - xPrev, inf);
+tolerance = ABSTOL + 100;
 while tolerance > ABSTOL
   k = k + 1;
   for i = 1:n
@@ -19,7 +19,7 @@ while tolerance > ABSTOL
     end
     xCurr(i) = (b(i) - sum) / A(i,i);
   end
-  tolerance = norm(xCurr - xPrev, inf);
+  tolerance = norm(xCurr - xPrev);
   xPrev = xCurr;
 end
 end
